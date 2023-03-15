@@ -3,7 +3,6 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/picsart.png
 #!homepage=https://github.com/deezertidal
 [Script]
-Picsart=type=http-response,pattern=^https?:\/\/api\.(meiease|picsart)\.cn\/(users\/show\/me|shop\/subscription\/apple\/purchases) url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/PicSartProCrack.js
-
+Picsart=type=http-response,pattern=^https?:\/\/api\.meiease\.cn\/shop\/subscription\/validate,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/picsart.js
 [MITM]
-hostname = %APPEND% api.meiease.cn, api.picsart.cn
+hostname = %APPEND% api.meiease.cn
